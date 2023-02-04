@@ -1,0 +1,15 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-what {
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.p-what__title {
+    font-size: 30px;
+
+    &::before {
+        content: "What is Ravek?";
+    }
+}

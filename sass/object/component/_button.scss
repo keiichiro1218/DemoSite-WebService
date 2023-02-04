@@ -1,0 +1,27 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-button {
+    display: inline-block;
+    padding: 16px 49px;
+    border-radius: 29px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 18px;
+    border: solid 3px var.$blue-deep;
+
+}
+
+.c-button-trial {
+    background-color: var.$blue-deep;
+    color: var.$white;
+    font-size: 18px;
+    
+}
+
+.c-button-download {
+    background-color: var.$white;
+    color: var.$blue-deep;
+    font-size: 18px;
+
+}

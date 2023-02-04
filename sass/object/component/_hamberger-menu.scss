@@ -1,0 +1,49 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-hamburger-menu {
+    display : block;
+    position: relative;
+    width : 21px;
+    height: 32px;
+    text-align: center;
+
+    span {
+        display : block;
+        position: absolute;
+        border-radius: 2px;
+        width   : 21px;
+        height  : 3px ;
+        background : var.$blue-deep;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition   : 0.3s ease-in-out;
+        transition        : 0.3s ease-in-out;
+
+        &:nth-child(1) {
+            top: 10px;
+
+                &::before {
+                    content: "MENU";
+                    color : var.$blue-deep;
+                    font-weight: 700;
+                    font-size: 10px;
+                    transform: scale(0.6);
+                    position: absolute;
+                    top: -15px;
+                    left: -5px;
+                }
+        }
+
+        &:nth-child(2) {
+            top: 20px;
+            right: 0;
+            width: 13px;
+            
+        }
+
+        &:nth-child(3) {
+            bottom: 0;
+
+        }
+    }
+}

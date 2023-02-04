@@ -1,0 +1,19 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.l-header {
+    height: 52px;
+}
+
+.l-header__inner {
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.l-header__title {
+    font-family: var.$lato;
+    color: var.$blue-deep;
+}

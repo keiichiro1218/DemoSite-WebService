@@ -1,0 +1,35 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.p-main {
+    padding: 60px 0;
+    background: var.$blue-light;
+}
+
+.p-main__inner {
+    margin: 0 5%;
+}
+
+.p-main__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.p-main__sentence {
+    font-size: 16px;
+
+}
+
+.p-main__img {
+    
+    img {
+        width: 100%;
+    }
+
+}
+
+.p-main__button {
+    text-align: center;
+    
+}

@@ -1,0 +1,17 @@
+@use "./global/variables" as var;
+@use "./global/mixin" as mixin;
+
+.c-section-title {
+    color: var.$blue-deep;
+    font-weight: 700;
+    font-size: 38px;
+
+    &::before {
+        display: block;
+        font-family: var.$Futura;
+        color: var.$blue-pale;
+        font-size: 22px;
+        margin-bottom: 12px;
+
+    }
+}
